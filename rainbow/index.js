@@ -1,6 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
+// This code is for my use, feel free to remove.
+const { secretKey } = require("../secrets.js");
+
 let currentRoleId = "",
   currentRole = null;
 
@@ -22,13 +25,14 @@ client.on("message", msg => {
   }
 });
 
-client.login("NDIyOTc1Nzc0MTU3NDM4OTg2.DrkJVA.da3YMHtcViEYwkEji5z-I-xFJEc");
+// Again secret key is for me.
+client.login(secretKey);
 
-function getRandomColor() {
+const getRandomColor = () => {
   var letters = "0123456789ABCDEF";
   var color = "#";
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
-}
+};
