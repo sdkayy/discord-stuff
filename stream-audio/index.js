@@ -1,6 +1,7 @@
-/*
-  This is a pretty basic boilerplate for some useful events that could make a helpful discord bot.
-*/
+/* 
+ * This code simply takes a command (*>play https://youtu.be/s0hMu9FUjmk) and will play the song via the bot. 
+ * This bot uses ytdl to get the stream from youtube
+ */
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const ytdl = require("ytdl-core");
