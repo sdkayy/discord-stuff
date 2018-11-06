@@ -4,6 +4,7 @@ This is a small little repository I made to host random discord bots that I made
 
 # Make a PR
 
+### Make sure your bot is in a separate folder. Any PR submitted while in root will be closed.
 ```
 git clone https://github.com/sdkayy/discord-stuff.git
 // Make your changes
